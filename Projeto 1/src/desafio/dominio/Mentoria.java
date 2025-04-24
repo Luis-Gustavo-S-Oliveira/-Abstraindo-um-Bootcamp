@@ -1,20 +1,26 @@
 package desafio.dominio;
 
-public class Mentoria {
-    String titulo;
-    String descricao;
+import java.time.LocalDate;
 
-    public String getTitulo (){
-        return titulo;
+public class Mentoria extends Conteudo {
+    private LocalDate data;
+
+    public void setData(LocalDate data){
+        this.data = data;
     }
 
-    public void setTitulo ( String titulo){
-        this.titulo = titulo;
+    public LocalDate getData(){
+        return data;
     }
-
+    
+    
     @Override
-    public String toString(){
-        return titulo + descricao + "vai tomar no cu ";
+    public String toString() {
+        return "Mentoria{" +
+                "titulo='" + getTitulo() + '\'' +
+                ", descricao='" + getDescricao() + '\'' +
+                ", data=" + data +
+                '}';
     }
     
 }
