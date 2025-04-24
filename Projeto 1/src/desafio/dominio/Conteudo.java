@@ -1,11 +1,12 @@
 package desafio.dominio;
 
-public class Conteudo {
+public abstract class Conteudo {
     private String titulo;
     private String descricao;
 
-    static  final double xpPadrao = 10.0;
+    protected static  final double xpPadrao = 10.0;
 
+    protected  abstract double calcularXp();
     public String getTitulo (){
         return titulo;
     }
