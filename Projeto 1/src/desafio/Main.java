@@ -50,7 +50,8 @@ public class Main {
     Dev dev2 = new Dev();
     dev2.setNome("joao");
     dev2.increverBootcamp(bootcamp1);
-        System.out.println(" Conteudos Inscritos = " + dev1.getConteudosInscritos());
+        System.out.println(" Conteudos Inscritos = " + dev2.getConteudosInscritos());
+        dev2.progredir();
         dev2.progredir();
         dev2.progredir();
         dev2.progredir();
