@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-    Mentoria mentoria1 = new Mentoria();
+
     mentoria1.setTitulo(" mentoria java");
     mentoria1.setDescricao(" Descricao mentoria java");
     mentoria1.setData(LocalDate.now());
@@ -60,8 +60,8 @@ public class Main {
         System.out.println("XP:" + dev2.calcularTotalXp());
     
     // Conteudo conteudo = new Curso(); <---- exemplo polimorfismo
-
-    
+    setdata(LocalDate.now());    
+    System.out.println(getData);
     }
     
 }

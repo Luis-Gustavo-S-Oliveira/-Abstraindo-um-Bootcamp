@@ -3,7 +3,7 @@ package desafio.dominio;
 import java.time.LocalDate;
 
 public class Mentoria extends Conteudo {
-    private LocalDate data;
+    private static LocalDate data;
 
     @Override
     protected  double calcularXp() {
@@ -11,11 +11,11 @@ public class Mentoria extends Conteudo {
     }
     
     
-    public void setData(LocalDate data){
+    public static void setData(LocalDate){
         this.data = data;
     }
 
-    public LocalDate getData(){
+    public static LocalDate getData(){
         return data;
     }
     
